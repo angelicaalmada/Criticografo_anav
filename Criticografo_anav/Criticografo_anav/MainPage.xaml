@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Criticografo_anav.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Actividad: Criticografo" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+        </Frame>
+
+        <Label Text="Nombre:" Margin="30,0,30,0" TextColor="Black" FontSize="23" FontAttributes="Bold" />
+        <Entry Keyboard="Text" x:Name="Nombre" Placeholder="Ingrese el Nombre" Margin="30,0,30,0"/>
+            <Label Text="Genero:" Margin="30,0,30,0"  TextColor="Black" FontSize="23" FontAttributes="Bold"/>
+        <Frame BackgroundColor="Transparent">
+            <StackLayout>
+                <Grid>
+                    <RadioButton Content="HOMBRE" x:Name="Hombre" Grid.Row="0" Grid.Column="0"/>
+                    <RadioButton Content="MUJER" x:Name="Mujer" Grid.Row="0" Grid.Column="1"/>
+                    
+                    <CheckBox x:Name="alto" Grid.Row="1" Grid.Column="0" Color="Black"/>
+                    <Label Text="ALTO" Grid.Row="1" Grid.Column="0" Margin="30,15,10,10" FontSize="17"/>
+                    
+                    <CheckBox x:Name="listo" Grid.Row="2" Grid.Column="0" Color="Black"/>
+                    <Label Text="LISTO" Grid.Row="2" Grid.Column="0" Margin="30,10,0,0" FontSize="17"/>
+                    
+                    <CheckBox x:Name="raro" Grid.Row="3" Grid.Column="0" Color="Black"/>
+                    <Label Text="RARO" Grid.Row="3" Grid.Column="0" Margin="30,10,0,0" FontSize="17" />
+                    
+                    <CheckBox x:Name="feo" Grid.Row="1" Grid.Column="1" Color="Black"/>
+                    <Label Text="FEO" Grid.Row="1" Grid.Column="1" Margin="30,10,0,0" FontSize="17"/>
+                    
+                    <CheckBox x:Name="extravagante" Grid.Row="2" Grid.Column="1" Color="Black"/>
+                    <Label Text="EXTRAVAGANTE" Grid.Row="2" Grid.Column="1" Margin="30,10,0,0" FontSize="17"/>
+                    
+                    <CheckBox x:Name="grande" Grid.Row="3" Grid.Column="1" Color="Black"/>
+                    <Label Text="GRANDE" Grid.Row="3" Grid.Column="1" Margin="30,10,0,0" FontSize="17"/>
+                </Grid>
+       
+                   
+            </StackLayout>
+        </Frame>
+
+        <Button Text="CRITICAR" Clicked="Button_Clicked" Margin="30,0,30,0"/>
+        <Frame>
+            <Entry x:Name="Criticar"  IsEnabled="True"/>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
